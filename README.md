@@ -71,5 +71,19 @@ Es un parámetro que se marca añadiendo un signo de interrogación (?) al final
 ¿Qué es un parámetro por defecto?
 Es un parámetro al que se le asigna un valor predeterminado directamente en su declaración utilizando el signo =; por ejemplo, rol: string = "user"
 
+Tema 5: Interfaces y type
+
+¿Qué es una interfaz y para qué sirve?
+Es una estructura que describe la forma de los datos, utilizada principalmente para definir la estructura de objetos y clases.
+
+¿Qué es un type?
+Es un alias de tipo (type alias) que también se utiliza para describir la forma de los datos y estructurar objetos.
+
+¿Cómo se declara una propiedad opcional?
+Se declara añadiendo un signo de interrogación (?) al final del nombre de la propiedad, justo antes de los dos puntos
+
+¿Cuándo conviene usar cada uno?
+interface: Se recomienda para definir estructuras de objetos y clases, especialmente cuando se necesita herencia o extender otras estructuras mediante extends.   type: Se recomienda para uniones (|), intersecciones (&), tipos literales (ej. "ADMIN" | "USER") y alias de tipos primitivos.
+
 Fuentes 
 Guía teórico-práctica Unidad 4: Introducción a TypeScript
