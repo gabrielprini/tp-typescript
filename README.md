@@ -41,6 +41,21 @@ tsc archivo.ts	Compila TypeScript a JavaScript y verifica tipos.
 npx tsx archivo.ts	Ejecuta TypeScript directamente, sin verificación completa de tipos.
 node archivo.js	Ejecuta JavaScript.
 
+Tema 3: Tipos básicos
+
+¿Qué son los tipos string, number y boolean?
+string: representa cadenas de texto
+number: representa valores numéricos
+boolean: representa valores lógicos de verdadero o falso
+
+¿Cómo se declara un array con tipo?
+Se declara especificando el tipo de los elementos que contendrá el arreglo seguido de corchetes []
+
+¿Qué es un tipo unión?
+Es un tipo que permite que una variable o valor pueda ser de uno u otro tipo mediante el uso del operador barra vertical (|)
+
+¿Por qué se recomienda evitar any?
+Porque el uso de any desactiva la verificación de tipos de TypeScript.   
 
 
 Fuentes 
