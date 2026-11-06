@@ -17,5 +17,31 @@ Los tipos funcionan como documentacion del propio codigo
 TypeScript 7 salió el 8 de julio de 2026. Es una reescritura completa del compilador en Go, unas 10
 veces más rápida. Se instala igual que antes, con npm i -D typescript.
 
+Tema 2: Crear y ejecutar un proyecto
+
+¿Cómo se instala TypeScript en un proyecto?
+tenemos que verificar la instalacion de npm y node, despues creamos el proyecto, instalamos las herramientas (npm i -D typescript @types/node@24 tsx) y despues verificamos la versión de TypeScript (npx tsc -v)
+
+¿Para qué sirve el archivo tsconfig.json?
+Es el archivo de configuración del proyecto. Le indica a TypeScript tres cosas:
+1. Qué archivos forman el proyecto: include. 
+2. Qué tan estricto debe ser al verificar tipos: strict y opciones relacionadas. 
+3. Cómo generar el JavaScript: versión (target), sistema de módulos (module) y carpeta de salida
+(outDir)
+
+¿Qué hace el comando tsc?
+Es el compilador. Cuando se ejecuta sin argumentos:
+1. Busca el tsconfig.json en la carpeta actual. 
+2. Toma los archivos indicados en include. 
+3. Verifica los tipos de todo el código y muestra los errores 
+4. Genera los archivos .js en la carpeta outDir
+
+¿Qué diferencia hay entre ejecutar un archivo con tsc, tsx y node?
+tsc archivo.ts	Compila TypeScript a JavaScript y verifica tipos.
+npx tsx archivo.ts	Ejecuta TypeScript directamente, sin verificación completa de tipos.
+node archivo.js	Ejecuta JavaScript.
+
+
+
 Fuentes 
 Guía teórico-práctica Unidad 4: Introducción a TypeScript
