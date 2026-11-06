@@ -85,5 +85,21 @@ Se declara añadiendo un signo de interrogación (?) al final del nombre de la p
 ¿Cuándo conviene usar cada uno?
 interface: Se recomienda para definir estructuras de objetos y clases, especialmente cuando se necesita herencia o extender otras estructuras mediante extends.   type: Se recomienda para uniones (|), intersecciones (&), tipos literales (ej. "ADMIN" | "USER") y alias de tipos primitivos.
 
+Tema 6: Enums y tipos literales
+
+¿Qué es un enum?
+Un enum (o enumeración) es una estructura que permite definir un conjunto de constantes con nombre asociadas a valores específicos
+
+¿Qué es un tipo literal?
+Un tipo literal es un tipo cuyo valor es un valor concreto y exacto (como un texto o un número específico) en lugar de un conjunto general de datos.
+
+¿En qué se parecen y en qué se diferencian?
+Parecidos:Ambos se utilizan para modelar y restringir los posibles valores que puede tomar una variable a un conjunto predefinido de opciones 
+Diferencias:Generación de código: Un enum genera un objeto físico en el JavaScript resultante, mientras que los tipos literales son puramente conceptuales para el sistema de tipos y desaparecen por completo tras la compilación.
+
+¿En qué situaciones se puede usar cada uno?
+Enum: Se puede usar cuando necesitas agrupar un conjunto de constantes relacionadas bajo un nombre común y requieres acceder a ellas como propiedades de un objeto (por ejemplo, Estado.PENDIENTE). También existe una alternativa moderna usando un objeto congelado con as const y keyof typeof si se busca mayor compatibilidad con Node.   
+Tipo literal: Se usa habitualmente para definir opciones fijas, uniones de cadenas o números concretos (como permisos, roles, configuraciones o estados simples), ya que ofrecen una sintaxis limpia, ligera y sin sobrecarga de código en JavaScript.
+
 Fuentes 
 Guía teórico-práctica Unidad 4: Introducción a TypeScript
