@@ -55,8 +55,21 @@ Se declara especificando el tipo de los elementos que contendrá el arreglo segu
 Es un tipo que permite que una variable o valor pueda ser de uno u otro tipo mediante el uso del operador barra vertical (|)
 
 ¿Por qué se recomienda evitar any?
-Porque el uso de any desactiva la verificación de tipos de TypeScript.   
+Porque el uso de any desactiva la verificación de tipos de TypeScript.  
 
+Tema 4: Funciones
+
+¿Cómo se indican los tipos de los parámetros?
+Se indican colocando dos puntos (:) seguidos del tipo correspondiente inmediatamente después del nombre de cada parámetro dentro de los paréntesis de la función.
+
+¿Cómo se indica el tipo de retorno?
+Se indican colocando dos puntos (:) seguidos del tipo correspondiente inmediatamente después del nombre de cada parámetro dentro de los paréntesis de la función.
+
+¿Qué es un parámetro opcional?
+Es un parámetro que se marca añadiendo un signo de interrogación (?) al final de su nombre (por ejemplo, apellido?: string).
+
+¿Qué es un parámetro por defecto?
+Es un parámetro al que se le asigna un valor predeterminado directamente en su declaración utilizando el signo =; por ejemplo, rol: string = "user"
 
 Fuentes 
 Guía teórico-práctica Unidad 4: Introducción a TypeScript
